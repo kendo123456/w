@@ -1,1 +1,1 @@
-game:Players.LocalPlayer:Kick("Imagine hacking")
+game.Players.LocalPlayer:Kick("Imagine hacking")
