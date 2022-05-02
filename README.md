@@ -1,2 +1,1 @@
-# w
-w
+game:Player.LocalPlayer:Kick("Imagine hacking")
