@@ -7,4 +7,13 @@ local Section = Tab:NewSection("Clickme")
 Section:NewButton("CLICK THIS BUTTRON FOR FLEE BOBUCKS", "click for bobuc", function()
    game.Players.LocalPlayer:Kick("Imagine hacking")
 end)
-
+----another tab
+local Tab = Window:NewTab("Anti afk")
+local Section = Tab:NewSection("A")
+Section:NewButton("ButtonText", "ButtonInfo", function()
+   local vu = game:GetService("VirtualUser")--anti afk 
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
